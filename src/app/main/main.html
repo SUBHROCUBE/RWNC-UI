@@ -1,0 +1,103 @@
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">RENU WIRENETTING</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="#">Dashboard</a></li> -->
+            <!-- <li><a >Settings</a></li> -->
+          <li class="dropdown" dropdown>
+            <a href="#" class="dropdown-toggle" dropdown-toggle >Profile
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a  >Change password</a></li>
+              <li><a  ui-sref="login">Logout</a></li>              
+            </ul>
+          </li>
+            <li><a>Help</a></li>
+          </ul>
+          <!-- <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form> -->
+        </div>
+      </div>
+</nav>
+
+<div class="container-fluid">
+      
+      <div class="row row-offcanvas row-offcanvas-left">        
+         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">           
+            <ul class="nav nav-sidebar">
+              <li class="active"><a  >Home</a></li>
+              <li><a >Customer</a></li>
+              <li><a >Stock</a></li>
+              <li><a>Delivery</a></li>
+              <li><a>Production</a></li>
+              <li><a>Received</a></li>
+            </ul>
+        </div><!--/span-->        
+        <div class="col-sm-9 col-md-10 main">          
+          <!--toggle sidebar button-->
+          <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+          </p>
+          
+          <h1 class="page-header">
+                Home             
+          </h1>
+          <div class="row placeholders">
+          
+          <div class="col-md-6">
+            <div class="well tHeight" >
+             <p class="section-heading">Recent orders</p>
+             </div>
+          </div> 
+          
+          <div class="col-md-6">
+            <div class="well tHeight" >
+             <p class="section-heading">Recent received</p> 
+             </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="well tHeight" >
+            <p class="section-heading">Recent delivery</p>  
+             </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="well tHeight">
+            <p class="section-heading">Stock below level</p>  
+             </div>
+          </div>
+
+
+          <hr>
+
+          </div><!--/row-->
+       </div>   
+      </div>
+</div><!--/.container-->
+
+<footer>
+  <p class="pull-right">©2015 </p>
+</footer>
+<script>
+  $(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+</script>      
+  <!-- script references -->
+     
+  </body>
