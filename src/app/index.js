@@ -13,6 +13,6 @@ angular.module('renu', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.r
         templateUrl: 'app/login/login.html'
         //controller: 'MainCtrl'
       });
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/login');
   })
 ;
