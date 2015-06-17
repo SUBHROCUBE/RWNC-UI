@@ -96,6 +96,11 @@ footer {
 .tHeight{
 	 height:200px
 }
+.compact-row{
+  height: 70px;
+  overflow: hidden;
+}
 .section-heading{
 	font-size: 22px
 }
+.coming-soon{padding-top: 35px;margin: 0 auto;width: 250px;}
