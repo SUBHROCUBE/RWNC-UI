@@ -64,6 +64,7 @@ footer {
 
 .main {
   padding: 20px;
+  padding-bottom: 10px
   background-color: #fff;
 }
 @media (min-width: 768px) {

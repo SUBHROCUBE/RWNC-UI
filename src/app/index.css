@@ -80,7 +80,7 @@ footer {
  */
 
 .main {
-  padding: 20px;
+  padding: 10px;
   background-color: #fff;
 }
 @media (min-width: 768px) {
@@ -104,3 +104,12 @@ footer {
 	font-size: 22px
 }
 .coming-soon{padding-top: 35px;margin: 0 auto;width: 250px;}
+
+.list-group {
+  padding-left: 0;
+  margin-bottom: 0px;
+}
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
