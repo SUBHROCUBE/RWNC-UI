@@ -94,14 +94,17 @@ footer {
 }
 
 .tHeight{
-	 height:200px
+	 min-height:250px
+}
+.table{
+  margin-bottom: 0px;
 }
 .compact-row{
   height: 70px;
   overflow: hidden;
 }
 .section-heading{
-	font-size: 22px
+	font-size: 20px
 }
 .coming-soon{padding-top: 35px;margin: 0 auto;width: 250px;}
 
