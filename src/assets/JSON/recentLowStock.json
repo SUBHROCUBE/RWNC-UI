@@ -1,0 +1,34 @@
+[
+    {
+        "Stock ID": 5,
+        "Item ID": 5,
+        "Item Material": "ss 316",
+        "Item Description": "This is a sample",
+        "Item Type": "wire",
+        "Stock Amount": "null/800"
+    },
+    {
+        "Stock ID": 5,
+        "Item ID": 5,
+        "Item Material": "ss 316",
+        "Item Description": "This is a sample",
+        "Item Type": "wire",
+        "Stock Amount": "null/800"
+    },
+    {
+        "Stock ID": 5,
+        "Item ID": 5,
+        "Item Material": "ss 316",
+        "Item Description": "This is a sample",
+        "Item Type": "wire",
+        "Stock Amount": "null/800"
+    },
+    {
+        "Stock ID": 5,
+        "Item ID": 5,
+        "Item Material": "ss 316",
+        "Item Description": "This is a sample",
+        "Item Type": "wire",
+        "Stock Amount": "null/800"
+    }
+]
