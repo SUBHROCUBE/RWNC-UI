@@ -2,7 +2,7 @@
   <!--toggle sidebar button-->         
   <h2 class="page-header">
         Home             
-  </h1>
+  </h2>
   <div class="row placeholders">    
   <div class="col-md-6">
     <div class="well tHeight" >
@@ -18,8 +18,8 @@
           <tr ng-repeat="order in recentOrders | limitTo:4">
             <td>{{order.customerAlias}}</td>
             <td>{{order.orderDate | date:"dd MMM yy"}}</td>
-            <td>{{order.orderDate | date:"dd MMM yy"}}</td>
-            <td>{{order.status}}</td>
+            <td>{{order.deliveryDate | date:"dd MMM yy"}}</td>
+            <td>{{order.orderStatus}}</td>
           </tr>
         </table>
         <!-- <a ui-sref="modules.orders" class="list-group-item" ng-repeat="order in recentOrders | limitTo:4">
@@ -101,7 +101,7 @@
         <tr ng-repeat="stock in recentLowStocks | limitTo:4">
           <td>{{stock.itemType}}</td>
           <td>{{stock.itemMaterial}}</td>
-          <td></td>
+          <td>{{stock.itemDiameter}}</td>
           <td>{{stock.stockAmount}}</td>
         </tr> 
       </table>

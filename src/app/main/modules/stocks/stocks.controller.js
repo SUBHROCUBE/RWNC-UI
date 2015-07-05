@@ -2,6 +2,8 @@
 
 angular.module('renu')
   .controller('StocksCtrl', function ($scope) {
+    $scope.$parent.module="stocks";
+
   	$scope.opened=false;
      $scope.openStart=function($event){
      	$event.preventDefault();

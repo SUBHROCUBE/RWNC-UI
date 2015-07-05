@@ -10,12 +10,19 @@ app.factory('httpRequest', ['$http', function($http){
 				return response;
 			});
 		},
-		post:function(uri,data){
+		postData:function(uri,data){
 			var url=config.apiBaseURL+uri;
 			return $http.post(url,data)
 			.then(function(response){
 				return response;
 			});
-		}
+		},
+		putData:function(uri,data){
+			var url=config.apiBaseURL+uri;
+			return $http.put(url,data)
+			.then(function(response){
+				return response;
+			});
+		},
 	};
 }])

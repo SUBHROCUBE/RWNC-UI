@@ -1,6 +1,7 @@
-'use strict';
+'use strict'; 
 
-angular.module('renu', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'ui.bootstrap'])
+angular.module('renu', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'ui.bootstrap',
+  'angular-loading-bar','validator','validator.rules'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider            
       .state('login', {
@@ -30,11 +31,19 @@ angular.module('renu', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.r
       })
       .state('modules.customer', {
         url: '/customer',
-        templateUrl: 'app/main/modules/customer/customer.html'
+        templateUrl: 'app/main/modules/customer/customer.html',
+        controller: 'CustomerCtrl'
+
+      })
+      .state('modules.newCustomer', {
+        url: '/customer/new',
+        templateUrl: 'app/main/modules/customer/editCustomer.html',
+        controller:'newCustomerCtrl'
       })
       .state('modules.editCustomer', {
-        url: '/customer/edi',
-        templateUrl: 'app/main/modules/customer/editCustomer.html'
+        url: '/customer/:customerId/edit',
+        templateUrl: 'app/main/modules/customer/editCustomer.html',
+        controller:'editCustomerCtrl'
       })
       .state('modules.orders', {
         url: '/orders',
@@ -54,4 +63,7 @@ angular.module('renu', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.r
       })
     $urlRouterProvider.otherwise('/login');
   })
-;
+
+.config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = false;
+}]);

@@ -9,3 +9,4 @@ config.api.recentReceived ='recent_received';
 config.api.recentDeliveries ='recent_deliveries';
 config.api.recentLowStocks ='recent_low_stocks';
 config.api.allCustomers='all_customers';
+config.api.customer='customer';
