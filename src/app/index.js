@@ -59,7 +59,18 @@ angular.module('renu', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.r
       })
       .state('modules.received', {
         url: '/received',
-        template: "<section class='body-section wrapper-in-c'><div class='coming-soon'><img src='assets/images/under-construction.png'></div></section>"       
+        templateUrl: 'app/main/modules/received/received.html',
+        controller:'ReceivedCtrl'
+      })
+      .state('modules.editReceived', {
+        url: '/editReceived?type',
+        templateUrl: 'app/main/modules/received/editNewReceived.html',
+        controller:'EditReceivedCtrl'
+      })
+      .state('modules.NewReceived', {
+        url: '/newReceived',
+        templateUrl: 'app/main/modules/received/editNewReceived.html',
+        controller:'NewReceivedCtrl'
       })
     $urlRouterProvider.otherwise('/login');
   })

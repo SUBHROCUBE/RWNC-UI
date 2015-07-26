@@ -1,11 +1,10 @@
 'use strict';
 
 angular.module('renu')
-  .controller('StocksCtrl', function ($scope) {
-    $scope.$parent.module="stocks";
-    $scope.isFilterCollapsed=true;
-  	$scope.opened=false;
-     $scope.openStart=function($event){
+  .controller('EditReceivedCtrl',['$scope','$log','$state','httpRequest','editCustomerHelper'
+   ,function ($scope,$log,$state,httpRequest,editCustomerHelper) {
+    $scope.$parent.module="received";
+    $scope.openStart=function($event){
      	$event.preventDefault();
     	$event.stopPropagation();
      	$scope.StartOpened=true;
@@ -15,4 +14,4 @@ angular.module('renu')
     	$event.stopPropagation();
      	$scope.ToOpened=true;
      };
-  });
+}]);
